@@ -396,7 +396,10 @@ p:last-child {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-secondary-dark) 100%);
+    background: linear-gradient(135deg, rgba(93, 64, 55, 0.85) 0%, rgba(93, 64, 55, 0.7) 50%, rgba(27, 94, 32, 0.85) 100%),
+                url('https://img.b2bpic.net/premium-photo/bright-yellow-excavator-digs-into-earth-construction-site-surrounded-by-trees-showcasing-hard-work-involved-building-development_331695-65816.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-overlay {
@@ -850,6 +853,8 @@ p:last-child {
     align-items: center;
     justify-content: center;
     color: var(--color-text-muted);
+    background-size: cover;
+    background-position: center;
 }
 
 .service-detail-image svg {
@@ -857,6 +862,47 @@ p:last-child {
     height: 80px;
     opacity: 0.3;
 }
+
+/* Service Section Background Images */
+#grunnarbeid .service-detail-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/reinforced-concrete-foundation-modern-monolithic-residential-building-prepared-formwork-with-reinforcing-mesh-pouring-concrete-dirt-clay-construction-site_331695-6401.jpg');
+}
+#grunnarbeid .service-detail-image svg { display: none; }
+
+#drenering .service-detail-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/new-sewer-reinforced-concrete-pipes-lie-construction-site-reconstruction-sewerage-water-disposal-system-surface-pipes-is-coated-with-black-liquid-bitumen_331695-8281.jpg');
+}
+#drenering .service-detail-image svg { display: none; }
+
+#vei .service-detail-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/view-construction-site-house-foundation-preparation-process-new-cement-real_455891-765.jpg');
+}
+#vei .service-detail-image svg { display: none; }
+
+#terreng .service-detail-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/laying-sod-new-garden-lawn-turf-laying-concept_230311-39074.jpg');
+}
+#terreng .service-detail-image svg { display: none; }
+
+#landbruk .service-detail-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/tractor-field-against-clear-sky_1048944-9381104.jpg');
+}
+#landbruk .service-detail-image svg { display: none; }
+
+#stottemur .service-detail-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/retaining-wall-office-parking-lot-city_539365-1886.jpg');
+}
+#stottemur .service-detail-image svg { display: none; }
+
+#transport .service-detail-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/orange-dumper-truck-construction-area_508835-10821.jpg');
+}
+#transport .service-detail-image svg { display: none; }
+
+#vinter .service-detail-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/red-tractor-with-bucket-praying-snow-cleans-park_236859-121.jpg');
+}
+#vinter .service-detail-image svg { display: none; }
 
 /* Pricing Section
    ========================================================================== */
@@ -935,7 +981,10 @@ p:last-child {
 }
 
 .about-intro-image {
-    background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary) 100%);
+    background: linear-gradient(135deg, rgba(121, 85, 72, 0.2) 0%, rgba(46, 125, 50, 0.2) 100%),
+                url('https://img.b2bpic.net/premium-photo/excavator-working-construction-site_220873-65460.jpg');
+    background-size: cover;
+    background-position: center;
     border-radius: var(--radius-lg);
     aspect-ratio: 4/3;
     display: flex;
@@ -945,9 +994,7 @@ p:last-child {
 }
 
 .about-intro-image svg {
-    width: 120px;
-    height: 120px;
-    opacity: 0.8;
+    display: none;
 }
 
 .values-grid {
@@ -982,7 +1029,10 @@ p:last-child {
 }
 
 .owner-image {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    background: linear-gradient(135deg, rgba(93, 64, 55, 0.1) 0%, rgba(78, 52, 46, 0.1) 100%),
+                url('https://img.b2bpic.net/premium-photo/portrait-engineer-wearing-hardhat-construction-site_1612397-1507.jpg');
+    background-size: cover;
+    background-position: center top;
     border-radius: var(--radius-lg);
     aspect-ratio: 3/4;
     display: flex;
@@ -992,9 +1042,7 @@ p:last-child {
 }
 
 .owner-image svg {
-    width: 80px;
-    height: 80px;
-    opacity: 0.5;
+    display: none;
 }
 
 .owner-text h2 {
@@ -1050,6 +1098,8 @@ p:last-child {
     align-items: center;
     justify-content: center;
     color: var(--color-white);
+    background-size: cover;
+    background-position: center;
 }
 
 .project-image svg {
@@ -1057,6 +1107,37 @@ p:last-child {
     height: 64px;
     opacity: 0.5;
 }
+
+/* Project Card Background Images */
+.project-card:nth-child(1) .project-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/reinforced-concrete-foundation-modern-monolithic-residential-building-prepared-formwork-with-reinforcing-mesh-pouring-concrete-dirt-clay-construction-site_331695-6401.jpg');
+}
+.project-card:nth-child(1) .project-image svg { display: none; }
+
+.project-card:nth-child(2) .project-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/new-sewer-reinforced-concrete-pipes-lie-construction-site-reconstruction-sewerage-water-disposal-system-surface-pipes-is-coated-with-black-liquid-bitumen_331695-8281.jpg');
+}
+.project-card:nth-child(2) .project-image svg { display: none; }
+
+.project-card:nth-child(3) .project-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/view-construction-site-house-foundation-preparation-process-new-cement-real_455891-765.jpg');
+}
+.project-card:nth-child(3) .project-image svg { display: none; }
+
+.project-card:nth-child(4) .project-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/laying-sod-new-garden-lawn-turf-laying-concept_230311-39074.jpg');
+}
+.project-card:nth-child(4) .project-image svg { display: none; }
+
+.project-card:nth-child(5) .project-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/tractor-field-against-clear-sky_1048944-9381104.jpg');
+}
+.project-card:nth-child(5) .project-image svg { display: none; }
+
+.project-card:nth-child(6) .project-image {
+    background-image: url('https://img.b2bpic.net/premium-photo/retaining-wall-office-parking-lot-city_539365-1886.jpg');
+}
+.project-card:nth-child(6) .project-image svg { display: none; }
 
 .project-content {
     padding: var(--space-5);
