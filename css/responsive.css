@@ -1,0 +1,599 @@
+/* ==========================================================================
+   Husby Anlegg AS - Responsive Styles
+   ========================================================================== */
+
+/* Large Desktop (1200px+)
+   ========================================================================== */
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 var(--space-8);
+    }
+}
+
+/* Desktop (1024px - 1199px)
+   ========================================================================== */
+@media (max-width: 1199px) {
+    :root {
+        --text-4xl: 2.125rem;
+        --text-3xl: 1.75rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+        gap: var(--space-8);
+    }
+}
+
+/* Tablet (768px - 1023px)
+   ========================================================================== */
+@media (max-width: 1023px) {
+    :root {
+        --text-4xl: 2rem;
+        --text-3xl: 1.625rem;
+        --container-padding: 1.25rem;
+    }
+
+    .section {
+        padding: var(--space-12) 0;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--color-white);
+        flex-direction: column;
+        padding: var(--space-6);
+        gap: 0;
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-base);
+        z-index: 99;
+    }
+
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: var(--space-4);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+
+    .nav-cta {
+        margin-top: var(--space-4);
+        text-align: center;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Quick Contact */
+    .quick-contact-inner {
+        gap: var(--space-4);
+    }
+
+    .quick-contact-item span {
+        display: none;
+    }
+
+    .quick-contact-item svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 400px;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-4);
+    }
+
+    .service-card {
+        padding: var(--space-6);
+    }
+
+    /* Why Us Grid */
+    .why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Service Area */
+    .service-area-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .service-area-map {
+        order: -1;
+    }
+
+    .map-placeholder {
+        max-width: 300px;
+        aspect-ratio: 1;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-8);
+    }
+
+    .footer-about {
+        grid-column: span 2;
+    }
+
+    /* Service Detail */
+    .service-detail-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .service-detail:nth-child(even) .service-detail-content {
+        direction: ltr;
+    }
+
+    .service-detail-image {
+        order: -1;
+    }
+
+    /* Pricing Grid */
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About Page */
+    .about-intro {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .about-intro-image {
+        order: -1;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .owner-section {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .owner-image {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .contact-form-wrapper {
+        padding: var(--space-8);
+    }
+}
+
+/* Mobile Large (480px - 767px)
+   ========================================================================== */
+@media (max-width: 767px) {
+    :root {
+        --text-4xl: 1.75rem;
+        --text-3xl: 1.5rem;
+        --text-2xl: 1.25rem;
+        --container-padding: 1rem;
+    }
+
+    .section {
+        padding: var(--space-10) 0;
+    }
+
+    .section-header {
+        margin-bottom: var(--space-8);
+    }
+
+    /* Buttons */
+    .btn {
+        padding: var(--space-3) var(--space-5);
+    }
+
+    .btn-large {
+        padding: var(--space-3) var(--space-6);
+        font-size: var(--text-base);
+    }
+
+    /* Header */
+    .nav {
+        height: 60px;
+    }
+
+    .logo-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo-name {
+        font-size: var(--text-base);
+    }
+
+    .logo-tagline {
+        font-size: 10px;
+    }
+
+    .nav-menu {
+        top: 60px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero-content {
+        padding: var(--space-8) 0;
+    }
+
+    .hero-subtitle {
+        font-size: var(--text-base);
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Introduction */
+    .intro-content p {
+        font-size: var(--text-base);
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: var(--space-4);
+        padding: var(--space-4);
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .service-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .service-card h3 {
+        margin-bottom: var(--space-1);
+    }
+
+    /* Why Us Grid */
+    .why-us-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .why-us-item {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: var(--space-4);
+    }
+
+    .why-us-icon {
+        width: 48px;
+        height: 48px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .why-us-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Service Area */
+    .area-lists {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    /* CTA Section */
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--space-10) 0 var(--space-6);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .footer-about {
+        grid-column: span 1;
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: var(--space-8) 0;
+    }
+
+    /* Service Detail */
+    .service-detail {
+        padding: var(--space-8) 0;
+    }
+
+    .service-detail-text h2 svg {
+        display: none;
+    }
+
+    /* Pricing Grid */
+    .pricing-section {
+        padding: var(--space-8);
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-3);
+    }
+
+    .pricing-item {
+        padding: var(--space-4);
+    }
+
+    .pricing-item h4 {
+        font-size: var(--text-sm);
+    }
+
+    .pricing-item .price {
+        font-size: var(--text-xl);
+    }
+
+    /* Values Grid */
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--space-4);
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Form */
+    .contact-form-wrapper {
+        padding: var(--space-6);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Free Site Visit CTA */
+    .befaring-cta {
+        padding: var(--space-8);
+    }
+}
+
+/* Mobile Small (320px - 479px)
+   ========================================================================== */
+@media (max-width: 479px) {
+    :root {
+        --text-4xl: 1.5rem;
+        --text-3xl: 1.375rem;
+        --container-padding: 0.875rem;
+    }
+
+    /* Header */
+    .logo-text {
+        display: none;
+    }
+
+    /* Quick Contact */
+    .quick-contact-inner {
+        justify-content: space-around;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 300px;
+    }
+
+    /* Pricing Grid */
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-item {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+
+    .contact-item-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-item-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Touch Device Optimizations
+   ========================================================================== */
+@media (hover: none) {
+    .service-card:hover,
+    .btn:hover {
+        transform: none;
+    }
+
+    .nav-menu a:hover::after {
+        width: 0;
+    }
+
+    /* Increase tap targets */
+    .btn {
+        min-height: 48px;
+    }
+
+    .nav-menu a {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    .quick-contact-item {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Print Styles
+   ========================================================================== */
+@media print {
+    .header,
+    .quick-contact,
+    .hero-cta,
+    .section-cta,
+    .cta-section,
+    .nav-toggle,
+    .befaring-cta {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: var(--space-8) 0;
+        background: none;
+        color: var(--color-text);
+    }
+
+    .hero h1 {
+        color: var(--color-text);
+    }
+
+    .section {
+        padding: var(--space-6) 0;
+    }
+
+    .footer {
+        background: none;
+        color: var(--color-text);
+        padding: var(--space-4) 0;
+    }
+
+    .footer h4,
+    .footer a {
+        color: var(--color-text);
+    }
+}
+
+/* Reduced Motion
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* High Contrast Mode
+   ========================================================================== */
+@media (prefers-contrast: high) {
+    :root {
+        --color-text-light: #424242;
+        --color-text-muted: #616161;
+        --color-border: #9E9E9E;
+    }
+
+    .btn {
+        border-width: 3px;
+    }
+
+    .service-card,
+    .pricing-item,
+    .contact-form-wrapper {
+        border: 2px solid var(--color-border);
+    }
+}
